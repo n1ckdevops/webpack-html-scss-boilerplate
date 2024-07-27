@@ -1,0 +1,14 @@
+@media (max-width: 1000px) and (min-width: 768px) {
+    .slider {
+        &__head {
+            &--background {
+                max-width: 850px;
+            }
+        }
+    }
+    .imagesslider {
+        &__buttons {
+            right: 50px;
+        }
+    }
+}

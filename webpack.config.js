@@ -27,36 +27,16 @@ module.exports = {
   plugins: [
     new HtmlBundlerPlugin({
       // verbose: 'auto', // output information about the process to console in development mode only
-
       entry: {
-        // define HTML templates here
-
-        // define the simple template
-        index: 'src/views/pages/home/index.html', // => dist/index.html
-        // define the template with passed external variables
-        demo: {
-          import: 'src/views/pages/demo/index.html', // => dist/demo.html
-          // pass data into template as an object
-          data: {
-            myVar: 'The string passed as the `myVar` variable from Webpack configuration.',
-          },
-          // -OR- define here a relative path to the JS/JSON file with data used in the template
-          // data: './src/data/demo.json'
-        },
-        about: 'src/views/pages/about/index.html', // => dist/about.html
-        404: './src/views/pages/404/index.html', // => dist/404.html
+        index: 'src/index.html',
       },
-
       js: {
-        // output filename of compiled JavaScript, used if `inline` option is false (defaults)
-        filename: 'assets/js/[name].[contenthash:8].js',
-        // inline: true; // inlines JS into HTML
+        // output filename of extracted JS from source script loaded in HTML via `<script>` tag
+        filename: 'src/js/[name].[contenthash:8].js', // output into dist/assets/js/ directory
       },
-
       css: {
-        // output filename of extracted CSS, used if `inline` option is false (defaults)
-        filename: 'assets/css/[name].[contenthash:8].css',
-        // inline: true; // inlines CSS into HTML
+        // output filename of extracted CSS from source style loaded in HTML via `<link>` tag
+        filename: 'src/scss/[name].[contenthash:8].css', // output into dist/assets/css/ directory
       },
 
       // supports template engines: eta, ejs, handlebars, nunjucks, twig

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/scss/app.scss">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="section">
+      <div class="container">
+        <div class="wrapper__inner">
+          <header class="header__top">
+            <div class="header__logo">
+              stepanchenko.me
+            </div>
+            <menu class="header__menu">
+              <li><a href="#" class="isactive">
+                  О компании
+                </a></li>
+              <li><a href="#">
+                  Услуги
+                </a></li>
+              <li><a href="#">
+                  Вакансии
+                </a></li>
+              <li><a href="#">
+                  Контакты
+                </a></li>
+            </menu>
+
+            <div class="header__contacts contacts">
+              <!-- выше добавил класс header_contacts и оставил обычный contacts - т.к в подвале повторяется -->
+              <div class="section__inner">
+                <!-- исправил название section-inner в стилях и выше -->
+                <div class="header__phone phone">
+                  <!-- добавил классы inner и оставил повторяющиеся -->
+                  <a href="#">8 800 000 00 00</a>
+                </div>
+                <div class="header__mail mail">
+                  <!-- добавил классы inner и оставил повторяющиеся -->
+                  <a href="#">info@stepanchenko.me</a>
+                </div>
+              </div>
+            </div>
+          </header>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section section__slider">
+      <div class="container">
+        <div class="section__inner">
+
+
+          <!-- Slider main container -->
+          <div id="head-slider" class="swiper slider__setting">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="slider-wrapper">
+                  <div class="slider slider__head--background">
+                    <div class="slider__block-1">
+                      <div class="slider__text">
+                        <div>Знаем</div>
+                        все о верстке
+                      </div>
+                      <div class="slider__desc">Давно выяснено, что при оценке дизайна и композиции читаемый текст
+                        мешает
+                        сосредоточиться.</div>
+                      <button class="slider__btn">Я в деле</button>
+                    </div>
+                    <div class="slider__block-2">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination slider__setting-pag"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      
+        <div class="section__inner">
+          <!-- Swiper -->
+          <div class="imagesslider__wrapper">
+            <div class="container">
+            <div class="imagesslider__title">
+              <span>Lorem ipsum</span>
+              <div>Lorem ipsum</div>
+            </div>
+          </div>
+          <div class="half-container">
+            <div class="swiper-container imagesslider" id="slider-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide imagesslider__slide">
+                  <div class="imagesslider__slide--price">
+                    1200 &nbsp;<span> руб</span>
+                  </div>
+                </div>
+                <div class="swiper-slide imagesslider__slide"></div>
+                <div class="swiper-slide imagesslider__slide"></div>
+                <div class="swiper-slide imagesslider__slide"></div>
+                <div class="swiper-slide imagesslider__slide"></div>
+                <div class="swiper-slide imagesslider__slide">1</div>
+                <div class="swiper-slide imagesslider__slide">2</div>
+                <div class="swiper-slide imagesslider__slide">3</div>
+                <div class="swiper-slide imagesslider__slide">4</div>
+                <div class="swiper-slide imagesslider__slide">Slide 5</div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="imagesslider__buttons">
+                <div class="swiper-button-prev imagesslider__prev"></div>
+                <div class="swiper-button-next imagesslider__next"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <button class="price">
+          Скачать прайс
+        </button>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div class="container">
+        <div class="section__inner">
+          <div class="rocket-wrapper">
+            <div class="rocket-titles">
+              <div class="rocket-title-top">Lorem ipsum</div>
+              <div class="rocket-title-bottom">Lorem ipsum</div>
+            </div>
+            <div class="rocket-img">
+
+            </div>
+            <div class="rocket-text">
+              Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
+              используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+              распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
+              Здесь ваш текст.. Здесь ваш текст.."<br><br>
+
+              Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по
+              умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё
+              дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые
+              версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="section">
+      <div class="container">
+        <div class="section__inner">
+          <!-- Swiper -->
+          <div class="footersilder__wrapper">
+            <div class="footersilder__title">
+              <span>Lorem ipsum</span>
+              <div>Lorem ipsum</div>
+            </div>
+            <div class="swiper-container footerslider" id="footerslider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide footersilder__slide"></div>
+                <div class="swiper-slide footersilder__slide"></div>
+                <div class="swiper-slide footersilder__slide"></div>
+                <div class="swiper-slide footersilder__slide"></div>
+                <div class="swiper-slide footersilder__slide"></div>
+                <div class="swiper-slide footersilder__slide"></div>
+                <div class="swiper-slide footersilder__slide">2</div>
+                <div class="swiper-slide footersilder__slide">3</div>
+                <div class="swiper-slide footersilder__slide">4</div>
+                <div class="swiper-slide footersilder__slide">Slide 5</div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="footersilder__buttons">
+                <div class="swiper-button-prev footersilder__next" id="banner__button--1"></div>
+                <div class="swiper-button-next footersilder__prev"></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</body>
+<footer>
+  <div class="section">
+    <div class="container">
+      <div class="section-inner">
+        <header class="header-top header-footer-height footer__height">
+          <div class="logo footer__logo">
+            stepanchenko.me
+          </div>
+          <menu class="menu footer__menu">
+            <li><a href="#">
+                О компании
+              </a></li>
+            <li><a href="#">
+                Услуги
+              </a></li>
+            <li><a href="#">
+                Вакансии
+              </a></li>
+            <li><a href="#">
+                Контакты
+              </a></li>
+          </menu>
+          <div class="contacts footer-contacts">
+            <div class="contacts-inner">
+              <div class="phone footer-phone">
+                <a href="#">8 800 000 00 00</a>
+              </div>
+              <div class="mail footer-mail">
+                <a href="#">info@stepanchenko.me</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+    </div>
+  </div>
+  <div class="section-footer">
+    <div class="container">
+      <div class="section__inner">
+        <div class="footer__soc">
+          <div class="footer__soc-text">© 2020 All Rights Reserved</div>
+          <div class="footer__soc-icons">
+            <div class="icons-fb"></div>
+            <div class="icons-vk"></div>
+            <div class="icons-tw"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+</html>

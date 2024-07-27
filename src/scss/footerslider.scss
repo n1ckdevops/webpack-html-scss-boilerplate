@@ -1,0 +1,86 @@
+// slider 3 
+.footersilder {
+  width: 100%;
+  height: 100%;
+  &__prev {
+    background-image: url(../images/mySwiper/prev.png);
+    width: 50px;
+    &::after {
+      content: none;
+    }
+  }
+  &__next {
+    background-image: url(../images/mySwiper/next.png);
+    width: 50px;
+    &::after {
+      content: none;
+    }
+  }
+  &__buttons {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+  }
+  &__title {
+    & span {
+      font-family: 'Roboto Slab';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: #C0C0C0;
+    }
+    & div {
+      font-family: 'Roboto Slab';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 47px;
+      color: #282828;
+    }
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    position: relative;
+    margin-top: 60px;
+  }
+
+  &__slide {
+    width: 175px;
+    height: 98px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+    &:nth-child(1) {
+      background-image: url('../images/slider-3/1.png');
+      background-size: cover;
+    }
+
+    &:nth-child(2) {
+      background-image: url('../images/slider-3/2.png');
+      background-size: cover;
+    }
+
+    &:nth-child(3) {
+      background-image: url('../images/slider-3/3.png');
+      background-size: cover;
+    }
+
+    &:nth-child(4) {
+      background-image: url('../images/slider-3/4.png');
+      background-size: cover;
+    }
+
+    &:nth-child(5) {
+      background-image: url('../images/slider-3/5.png');
+      background-size: cover;
+    }
+
+    &:nth-child(6) {
+      background-image: url('../images/slider-3/6.png');
+      background-size: cover;
+    }
+  }
+
+}

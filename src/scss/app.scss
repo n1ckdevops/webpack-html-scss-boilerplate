@@ -1,0 +1,42 @@
+/* By Athlon Front-End Team */
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* CSS print */
+@import 'base/print';
+
+/* Fonts */
+// @import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* Vendor */
+
+/* Components */
+
+/* Browser specific styles */
+@import 'dirty/hacks';
+
+// import styles bundle
+// @import 'swiper/css/bundle';
+// import Swiper and modules styles
+// @import 'swiper/css';
+// @import 'swiper/css/navigation';
+// @import 'swiper/css/pagination';
+// my demo-settings for webpack
+
+/* Demo Page styles */
+@import 'demo';
+@import 'imagesslider';
+@import 'header';
+@import 'general';
+@import 'headerslider';
+@import 'footerslider';
+@import 'section';
+@import 'footer';
+@import 'media/tablet';
